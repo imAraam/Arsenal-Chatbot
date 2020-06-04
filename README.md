@@ -13,6 +13,10 @@ The PSEL standards were met in the development of this chatbot. The mission and 
 
 The rule based and similarity-based component consists of pre-processing functions such as punctuation removals, text lemmatization, and word categorization within the main chatbot program. It also includes a sentence tokenizer for the user input, in order to implement and utilise the tf-idf and cosine similarity model which helps provide a suitable response to the user input from a pre-defined text document with an appropriate corpus to the chatbot domain. The chatbot also has appropriate aiml flags to be triggered in order to generate a suitable response to user greetings, farewells etc. Available in the aiml document.
 
+"std-startup.xml" the program learns the std-startup file and then loads the Arsenal.aiml file.
+"aiml/Arsenal.aiml" the program loads the aiml file and records the time it takes to learn it, and prints it to the user.
+"question_answer_pairs.txt" retrieves suitable responses to the user based on the corpus in this file
+
 ## Image Classification Component
 
 The image classification component of the chatbot is used to predict whether an arsenal player is a male or a female player and is implemented using a multi-layered convolutional network in a sequential model. It contains 3 convolution2D layers to extract the features of the images, with 64 filters on the last layer. 3 relu activation layers for rectified linear activation. 3 maxpooling2D layers to reduce spatial volume of the images after convolution. It then flattens the data, as convolution is 2D and the dense layer requires a 1D data set, before passing it to the 64 node dense layer to connect the neural network. It then contains another relu activation layer, as well as, a dropout layer with an input fraction rate of 0.5 at each update during training. Finally, the output layers are a 1 node dense layer along with a sigmoid activation layer for 1 / (1 + exp(-x)).
