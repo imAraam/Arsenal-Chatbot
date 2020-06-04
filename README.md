@@ -72,4 +72,4 @@ The reinforcement learning extension is implemented using the deap library and u
 
 ## MainChatbot.py
 
-
+All the previously mentioned components come together in the main chatbot loop and function together to present a working multi-featured chatbot about Arsenal FC.
