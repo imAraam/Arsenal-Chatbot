@@ -1,0 +1,120 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings -->
+<category><pattern> HELLO </pattern>
+  <template> Hi there! </template>
+</category>
+
+<category><pattern> HELLO * </pattern>
+  <template><srai> Hi there! </srai></template>
+</category>
+
+<category><pattern> HI </pattern>
+  <template> Hey! </template>
+</category>
+
+<category><pattern> HI * </pattern>
+  <template><srai> Hey! </srai></template>
+</category>
+
+<category><pattern> HI THERE </pattern>
+  <template> What's up? </template>
+</category>
+
+<category><pattern> HEY </pattern>
+  <template> Hello! </template>
+</category>
+
+<category><pattern> HOWDY </pattern>
+  <template> Howdy partner </template>
+</category>
+
+<category><pattern> HOW ARE YOU </pattern>
+  <template> Quite good, thank you! </template>
+</category>
+
+<!-- farewells -->
+
+<category><pattern> BYE </pattern>
+  <template> Bye! </template>
+</category>
+
+<category><pattern> TAKE CARE </pattern>
+  <template> Take care! </template>
+</category>
+
+<category><pattern> GOODBYE </pattern>
+  <template> See you later! </template>
+</category>
+
+
+<category><pattern> GOODBYE * </pattern>
+  <template><srai> See you later! </srai></template>
+</category>
+
+<category><pattern> SEE YOU LATER </pattern>
+  <template> Have a nice day! </template>
+</category>
+
+
+<!-- Thanks -->
+
+<category><pattern> THANKS </pattern>
+  <template> My pleasure! </template>
+</category>
+
+<category><pattern> THANK YOU </pattern>
+  <template> Any time! </template>
+</category>
+
+<category><pattern> CHEERS </pattern>
+  <template> Cheers mate! </template>
+</category>
+
+<category><pattern> CHEERS * </pattern>
+  <template><srai> Cheers mate! </srai></template>
+</category>
+
+<category><pattern> THAT IS HELPFUL </pattern>
+  <template> Happy to help! </template>
+</category>
+
+<!-- Arsenal -->
+
+<category><pattern> DO YOU SUPPORT ARSENAL </pattern>
+  <template> Yes I do! What about you do you support Arsenal </template>
+</category>
+
+<category><pattern> YES </pattern>
+  <that> YES I DO WHAT ABOUT YOU DO YOU SUPPORT ARSENAL </that>
+  <template> Good. They are the best team in the world. </template>
+</category>
+
+<category><pattern> NO </pattern>
+  <that> YES I DO WHAT ABOUT YOU DO YOU SUPPORT ARSENAL </that>
+  <template> That's unfortunate. Hopefully I can change your mind. </template>
+</category>
+
+
+<!-- FOL -->
+
+<category><pattern> I WILL WATCH * PLAY ON * </pattern>
+  <template>#1$<star index="1"/>$<star index="2"/></template>
+</category>
+
+<category><pattern> IS * PLAYING ON * </pattern>
+  <template>#2$<star index="1"/>$<star index="2"/></template>
+</category>
+
+<category><pattern> WHICH PLAYER PLAYS ON * </pattern>
+  <template>#3$<star/></template>
+</category>
+
+
+<!-- Default response -->
+
+<category><pattern>*</pattern> 
+  <template> Sorry. I do not understand. </template>
+</category>
+
+</aiml>
