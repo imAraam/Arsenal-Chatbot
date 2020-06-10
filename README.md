@@ -54,7 +54,7 @@ The transformer network component is used to make predictions on which game has 
 
 The model is then trained and the weights of the model are saved to be loaded into the main chatbot along with the architecture of the model to allow the user to input dates for predictions to be made.
 
-I must note however that this does not function as intended. Due to there being multiple games on the same dates and some teams having similar names it seems to not operate as intended. Example is shown below of the lack of accuracy.
+I must note however that this does not function as intended. Due to there being multiple games on the same dates and some teams having similar names it seems to not operate as intended. 
 
 #### Related Files
 
